@@ -1,0 +1,1029 @@
+void setup()
+{
+  Serial.begin(9600);
+  
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(3, OUTPUT);
+  
+}
+
+int userinput;
+
+void LedLightShow1()
+{
+  //ON-OFF//
+  digitalWrite(13, HIGH);
+  delay(200);
+  digitalWrite(13, LOW);
+  delay(200); 
+  
+  digitalWrite(12, HIGH);
+  delay(200);
+  digitalWrite(12, LOW);
+  delay(200); 
+  
+  digitalWrite(11, HIGH);
+  delay(200);
+  digitalWrite(11, LOW);
+  delay(200); 
+  
+  digitalWrite(10, HIGH);
+  delay(200);
+  digitalWrite(10, LOW);
+  delay(200); 
+  
+  digitalWrite(9, HIGH); 
+  delay(200);
+  digitalWrite(9, LOW);
+  delay(200); 
+  
+  digitalWrite(8, HIGH);
+  delay(200); 
+  digitalWrite(8, LOW);
+  delay(200); 
+  
+  digitalWrite(7, HIGH);
+  delay (200);
+  digitalWrite(7, LOW);
+  delay(200); 
+  
+  digitalWrite(6, HIGH);
+  delay(200); 
+  digitalWrite(6, LOW);
+  delay(200); 
+  
+  digitalWrite(5, HIGH);
+  delay(200); 
+  digitalWrite(5, LOW);
+  delay(200); 
+  
+  digitalWrite(4, HIGH);
+  delay(200); 
+  digitalWrite(4, LOW);
+  delay(200); 
+  
+  digitalWrite(3, HIGH);
+  delay(200); 
+  digitalWrite(3, LOW);
+  delay(200);
+  
+  //END//ON-OFF//
+  
+  //SIDE TO CENTER//
+  digitalWrite(13, HIGH); 
+  digitalWrite(3, HIGH);
+  delay(200); 
+  
+  digitalWrite(13, LOW);
+  digitalWrite(3, LOW);
+  delay(500); 
+  
+  digitalWrite(12, HIGH); 
+  digitalWrite(4, HIGH);
+  delay(200); 
+  
+  digitalWrite(12, LOW);
+  digitalWrite(4, LOW);
+  delay(500); 
+  
+  digitalWrite(11, HIGH); 
+  digitalWrite(5, HIGH);
+  delay(200); 
+  
+  digitalWrite(11, LOW);
+  digitalWrite(5, LOW);
+  delay(500); 
+  
+  digitalWrite(10, HIGH); 
+  digitalWrite(6, HIGH);
+  delay(200); 
+  
+  digitalWrite(10, LOW);
+  digitalWrite(6, LOW);
+  delay(500); 
+  
+  digitalWrite(9, HIGH); 
+  digitalWrite(7, HIGH);
+  delay(200); 
+  
+  digitalWrite(9, LOW);
+  digitalWrite(7, LOW);
+  delay(500); 
+  
+  digitalWrite(8, HIGH);
+  delay(200); 
+  digitalWrite(8, LOW);
+  delay(500); 
+  
+  //END//SIDE TO CENTER//
+  
+  //CENTER TO SIDE//
+  digitalWrite(8, HIGH);
+  delay(200); 
+  digitalWrite(8, LOW);
+  delay(500);
+  
+  digitalWrite(9, HIGH); 
+  digitalWrite(7, HIGH);
+  delay(200); 
+  
+  digitalWrite(9, LOW);
+  digitalWrite(7, LOW);
+  delay(500);
+  
+  digitalWrite(10, HIGH); 
+  digitalWrite(6, HIGH);
+  delay(200); 
+  
+  digitalWrite(10, LOW);
+  digitalWrite(6, LOW);
+  delay(500); 
+  
+  digitalWrite(11, HIGH); 
+  digitalWrite(5, HIGH);
+  delay(200); 
+  
+  digitalWrite(11, LOW);
+  digitalWrite(5, LOW);
+  delay(500); 
+  
+  digitalWrite(12, HIGH); 
+  digitalWrite(4, HIGH);
+  delay(200); 
+  
+  digitalWrite(12, LOW);
+  digitalWrite(4, LOW);
+  delay(500); 
+  
+  digitalWrite(13, HIGH); 
+  digitalWrite(3, HIGH);
+  delay(200); 
+  
+  digitalWrite(13, LOW);
+  digitalWrite(3, LOW);
+  delay(500);
+  
+  //END//CENTER TO SIDE//
+  
+  //ODD-EVEN//
+  digitalWrite(13, HIGH);
+  delay (200);
+   
+  
+  digitalWrite(11, HIGH);
+  delay(200); 
+   
+  
+  digitalWrite(9, HIGH);
+  delay(200); 
+  
+  
+  digitalWrite(7, HIGH);
+  delay (200);
+   
+  
+  digitalWrite(5, HIGH);
+  delay(200); 
+  
+  
+  digitalWrite(3, HIGH);
+  delay(200); 
+  
+  digitalWrite(12, HIGH);
+  delay (200);
+  
+  
+  digitalWrite(10, HIGH);
+  delay(200); 
+  
+  digitalWrite(8, HIGH);
+  delay(200); 
+  
+  
+  digitalWrite(6, HIGH);
+  delay (200);
+  
+  
+  digitalWrite(4, HIGH);
+  delay(200); 
+  
+  digitalWrite(13, LOW);
+  delay(200);
+  digitalWrite(12, LOW);
+  delay(200);
+  digitalWrite(11, LOW);
+  delay(200);
+  digitalWrite(10, LOW);
+  delay(200);
+  digitalWrite(9, LOW);
+  delay(200);
+  digitalWrite(8, LOW);
+  delay(200);
+  digitalWrite(7, LOW);
+  delay(200);
+  digitalWrite(6, LOW);
+  delay(200);
+  digitalWrite(5, LOW);
+  delay(200);
+  digitalWrite(4, LOW);
+  delay(200);
+  digitalWrite(3, LOW);
+  delay(200);
+  
+  //END//ODD-EVEN// 
+}
+
+void LedLightShow2()
+{
+  //BY PAIR//
+  digitalWrite(13, HIGH); 
+  delay(200);
+  digitalWrite(12, HIGH);
+  delay(200); 
+  
+  digitalWrite(13, LOW);
+  digitalWrite(12, LOW);
+  delay(500); 
+  
+  digitalWrite(11, HIGH); 
+  digitalWrite(10, HIGH);
+  delay(200); 
+  
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  delay(500); 
+  
+  digitalWrite(9, HIGH); 
+  digitalWrite(8, HIGH);
+  delay(200); 
+  
+  digitalWrite(9, LOW);
+  digitalWrite(8, LOW);
+  delay(500); 
+  
+  digitalWrite(7, HIGH); 
+  digitalWrite(6, HIGH);
+  delay(200); 
+  
+  digitalWrite(7, LOW);
+  digitalWrite(6, LOW);
+  delay(500); 
+  
+  digitalWrite(5, HIGH); 
+  digitalWrite(4, HIGH);
+  delay(200); 
+  
+  digitalWrite(5, LOW);
+  digitalWrite(4, LOW);
+  delay(500); 
+  
+  //END//BY PAIR//
+
+  //SERIES//
+  
+  digitalWrite(3, HIGH);
+  delay(200);
+  digitalWrite(4, HIGH);
+  delay(200);
+  digitalWrite(5, HIGH);
+  delay(200);
+  digitalWrite(6, HIGH);
+  delay(200);
+  digitalWrite(7, HIGH);
+  delay(200);
+  digitalWrite(8, HIGH);
+  delay(200);
+  digitalWrite(9, HIGH);
+  delay(200);
+  digitalWrite(10, HIGH);
+  delay(200);
+  digitalWrite(11, HIGH);
+  delay(200);
+  digitalWrite(12, HIGH);
+  delay(200);
+  digitalWrite(13, HIGH);
+  delay(200); 
+  
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(13, LOW);  
+ 
+  //END//SERIES//
+  
+  //GRADUAL ON-OFF//L-R//
+  digitalWrite(13, HIGH); 
+  delay(50);
+  digitalWrite(12, HIGH);
+  delay(50); 
+  
+  digitalWrite(13, LOW);
+  delay(25); 
+  digitalWrite(12, HIGH); 
+  delay(50);
+  digitalWrite(11, HIGH);
+  delay(50);
+  
+  digitalWrite(12, LOW);
+  delay(25); 
+  digitalWrite(11, HIGH); 
+  delay(50);
+  digitalWrite(10, HIGH);
+  delay(50);
+  
+  digitalWrite(11, LOW);
+  delay(25); 
+  digitalWrite(10, HIGH); 
+  delay(50);
+  digitalWrite(9, HIGH);
+  delay(50);
+  
+  digitalWrite(10, LOW);
+  delay(25); 
+  digitalWrite(9, HIGH); 
+  delay(50);
+  digitalWrite(8, HIGH);
+  delay(50);
+  
+  digitalWrite(9, LOW);
+  delay(25); 
+  digitalWrite(8, HIGH); 
+  delay(50);
+  digitalWrite(7, HIGH);
+  delay(50);
+  
+  digitalWrite(8, LOW);
+  delay(25); 
+  digitalWrite(7, HIGH); 
+  delay(50);
+  digitalWrite(6, HIGH);
+  delay(50);
+  
+  digitalWrite(7, LOW);
+  delay(25); 
+  digitalWrite(6, HIGH); 
+  delay(50);
+  digitalWrite(5, HIGH);
+  delay(50);
+  
+  digitalWrite(6, LOW);
+  delay(25); 
+  digitalWrite(5, HIGH); 
+  delay(50);
+  digitalWrite(4, HIGH);
+  delay(50);
+  
+  digitalWrite(5, LOW);
+  delay(25); 
+  digitalWrite(4, HIGH); 
+  delay(50);
+  digitalWrite(3, HIGH);
+  delay(50);
+  
+  digitalWrite(4, LOW);
+  delay(25); 
+  digitalWrite(3, HIGH); 
+  delay(50);
+  digitalWrite(3, LOW);
+  delay(50);
+  
+  //END//GRADUAL ON-OFF//L-R//
+  
+  //STEADY ON-OFF//
+  
+  delay(500);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(12, HIGH);
+  digitalWrite(13, HIGH); 
+  delay(500);
+  
+  delay(500);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(13, LOW);
+  
+  //END//
+  
+  //GRADUAL ON-OFF//R-L//
+  
+  digitalWrite(3, HIGH); 
+  delay(50);
+  digitalWrite(4, HIGH);
+  delay(50); 
+  
+  digitalWrite(3, LOW);
+  delay(25); 
+  digitalWrite(4, HIGH); 
+  delay(50);
+  digitalWrite(5, HIGH);
+  delay(50);
+  
+  digitalWrite(4, LOW);
+  delay(25); 
+  digitalWrite(5, HIGH); 
+  delay(50);
+  digitalWrite(6, HIGH);
+  delay(50);
+  
+  digitalWrite(5, LOW);
+  delay(25); 
+  digitalWrite(6, HIGH); 
+  delay(50);
+  digitalWrite(7, HIGH);
+  delay(50);
+  
+  digitalWrite(6, LOW);
+  delay(25); 
+  digitalWrite(7, HIGH); 
+  delay(50);
+  digitalWrite(8, HIGH);
+  delay(50);
+  
+  digitalWrite(7, LOW);
+  delay(25); 
+  digitalWrite(8, HIGH); 
+  delay(50);
+  digitalWrite(9, HIGH);
+  delay(50);
+  
+  digitalWrite(8, LOW);
+  delay(25); 
+  digitalWrite(9, HIGH); 
+  delay(50);
+  digitalWrite(10, HIGH);
+  delay(50);
+  
+  digitalWrite(9, LOW);
+  delay(25); 
+  digitalWrite(10, HIGH); 
+  delay(50);
+  digitalWrite(11, HIGH);
+  delay(50);
+  
+  digitalWrite(10, LOW);
+  delay(25); 
+  digitalWrite(11, HIGH); 
+  delay(50);
+  digitalWrite(12, HIGH);
+  delay(50);
+  
+  digitalWrite(11, LOW);
+  delay(25); 
+  digitalWrite(12, HIGH); 
+  delay(50);
+  digitalWrite(13, HIGH);
+  delay(50);
+  
+  digitalWrite(12, LOW);
+  delay(25); 
+  digitalWrite(13, HIGH); 
+  delay(50);
+  digitalWrite(13, LOW);
+  delay(50);
+  
+  //END GRADUAL ON-OFF//R-L//
+  
+ //STEADY ON-OFF//
+  
+  delay(500);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(12, HIGH);
+  digitalWrite(13, HIGH); 
+  delay(500);
+  
+  delay(500);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(13, LOW);
+  
+  //END//  
+  
+  //GRADUAL ON-OFF//L-R//
+  digitalWrite(13, HIGH); 
+  delay(50);
+  digitalWrite(12, HIGH);
+  delay(50); 
+  
+  digitalWrite(13, LOW);
+  delay(25); 
+  digitalWrite(12, HIGH); 
+  delay(50);
+  digitalWrite(11, HIGH);
+  delay(50);
+  
+  digitalWrite(12, LOW);
+  delay(25); 
+  digitalWrite(11, HIGH); 
+  delay(50);
+  digitalWrite(10, HIGH);
+  delay(50);
+  
+  digitalWrite(11, LOW);
+  delay(25); 
+  digitalWrite(10, HIGH); 
+  delay(50);
+  digitalWrite(9, HIGH);
+  delay(50);
+  
+  digitalWrite(10, LOW);
+  delay(25); 
+  digitalWrite(9, HIGH); 
+  delay(50);
+  digitalWrite(8, HIGH);
+  delay(50);
+  
+  digitalWrite(9, LOW);
+  delay(25); 
+  digitalWrite(8, HIGH); 
+  delay(50);
+  digitalWrite(7, HIGH);
+  delay(50);
+  
+  digitalWrite(8, LOW);
+  delay(25); 
+  digitalWrite(7, HIGH); 
+  delay(50);
+  digitalWrite(6, HIGH);
+  delay(50);
+  
+  digitalWrite(7, LOW);
+  delay(25); 
+  digitalWrite(6, HIGH); 
+  delay(50);
+  digitalWrite(5, HIGH);
+  delay(50);
+  
+  digitalWrite(6, LOW);
+  delay(25); 
+  digitalWrite(5, HIGH); 
+  delay(50);
+  digitalWrite(4, HIGH);
+  delay(50);
+  
+  digitalWrite(5, LOW);
+  delay(25); 
+  digitalWrite(4, HIGH); 
+  delay(50);
+  digitalWrite(3, HIGH);
+  delay(50);
+  
+  digitalWrite(4, LOW);
+  delay(25); 
+  digitalWrite(3, HIGH); 
+  delay(50);
+  digitalWrite(3, LOW);
+  delay(50);
+  
+  //END//GRADUAL ON-OFF//L-R//
+  
+  //STEADY ON-OFF//
+  
+  delay(500);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(12, HIGH);
+  digitalWrite(13, HIGH); 
+  delay(500);
+  
+  delay(500);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(13, LOW);
+  
+  //END//  
+  
+  //GRADUAL ON-OFF//R-L//
+  
+  digitalWrite(3, HIGH); 
+  delay(50);
+  digitalWrite(4, HIGH);
+  delay(50); 
+  
+  digitalWrite(3, LOW);
+  delay(25); 
+  digitalWrite(4, HIGH); 
+  delay(50);
+  digitalWrite(5, HIGH);
+  delay(50);
+  
+  digitalWrite(4, LOW);
+  delay(25); 
+  digitalWrite(5, HIGH); 
+  delay(50);
+  digitalWrite(6, HIGH);
+  delay(50);
+  
+  digitalWrite(5, LOW);
+  delay(25); 
+  digitalWrite(6, HIGH); 
+  delay(50);
+  digitalWrite(7, HIGH);
+  delay(50);
+  
+  digitalWrite(6, LOW);
+  delay(25); 
+  digitalWrite(7, HIGH); 
+  delay(50);
+  digitalWrite(8, HIGH);
+  delay(50);
+  
+  digitalWrite(7, LOW);
+  delay(25); 
+  digitalWrite(8, HIGH); 
+  delay(50);
+  digitalWrite(9, HIGH);
+  delay(50);
+  
+  digitalWrite(8, LOW);
+  delay(25); 
+  digitalWrite(9, HIGH); 
+  delay(50);
+  digitalWrite(10, HIGH);
+  delay(50);
+  
+  digitalWrite(9, LOW);
+  delay(25); 
+  digitalWrite(10, HIGH); 
+  delay(50);
+  digitalWrite(11, HIGH);
+  delay(50);
+  
+  digitalWrite(10, LOW);
+  delay(25); 
+  digitalWrite(11, HIGH); 
+  delay(50);
+  digitalWrite(12, HIGH);
+  delay(50);
+  
+  digitalWrite(11, LOW);
+  delay(25); 
+  digitalWrite(12, HIGH); 
+  delay(50);
+  digitalWrite(13, HIGH);
+  delay(50);
+  
+  digitalWrite(12, LOW);
+  delay(25); 
+  digitalWrite(13, HIGH); 
+  delay(50);
+  digitalWrite(13, LOW);
+  delay(50);
+  
+  //END GRADUAL PATTERN//
+  
+ //STEADY ON-OFF//
+  
+  delay(500);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(12, HIGH);
+  digitalWrite(13, HIGH); 
+  delay(500);
+  
+  delay(500);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(13, LOW);
+  
+  //END//  
+    
+}
+    
+void LedLightShow3()
+{
+  //GRADUAL ON-OFF//
+  digitalWrite(13, HIGH); 
+  delay(100);
+  digitalWrite(12, HIGH);
+  delay(100); 
+  
+  digitalWrite(13, LOW);
+  delay(50); 
+  digitalWrite(12, HIGH); 
+  delay(100);
+  digitalWrite(11, HIGH);
+  delay(100);
+  
+  digitalWrite(12, LOW);
+  delay(50); 
+  digitalWrite(11, HIGH); 
+  delay(100);
+  digitalWrite(10, HIGH);
+  delay(100);
+  
+  digitalWrite(11, LOW);
+  delay(50); 
+  digitalWrite(10, HIGH); 
+  delay(100);
+  digitalWrite(9, HIGH);
+  delay(100);
+  
+  digitalWrite(10, LOW);
+  delay(50); 
+  digitalWrite(9, HIGH); 
+  delay(100);
+  digitalWrite(8, HIGH);
+  delay(100);
+  
+  digitalWrite(9, LOW);
+  delay(50); 
+  digitalWrite(8, HIGH); 
+  delay(100);
+  digitalWrite(7, HIGH);
+  delay(100);
+  
+  digitalWrite(8, LOW);
+  delay(50); 
+  digitalWrite(7, HIGH); 
+  delay(100);
+  digitalWrite(6, HIGH);
+  delay(100);
+  
+  digitalWrite(7, LOW);
+  delay(50); 
+  digitalWrite(6, HIGH); 
+  delay(100);
+  digitalWrite(5, HIGH);
+  delay(100);
+  
+  digitalWrite(6, LOW);
+  delay(50); 
+  digitalWrite(5, HIGH); 
+  delay(100);
+  digitalWrite(4, HIGH);
+  delay(100);
+  
+  digitalWrite(5, LOW);
+  delay(50); 
+  digitalWrite(4, HIGH); 
+  delay(100);
+  digitalWrite(3, HIGH);
+  delay(100);
+  
+  digitalWrite(4, LOW);
+  delay(50); 
+  digitalWrite(3, HIGH); 
+  delay(100);
+  digitalWrite(3, LOW);
+  delay(100);
+  //END//GRADUAL ON-OFF//L-R//
+  
+  //GRADUAL ON-OFF//R-L//
+  
+  digitalWrite(3, HIGH); 
+  delay(100);
+  digitalWrite(4, HIGH);
+  delay(100); 
+  
+  digitalWrite(3, LOW);
+  delay(50); 
+  digitalWrite(4, HIGH); 
+  delay(100);
+  digitalWrite(5, HIGH);
+  delay(100);
+  
+  digitalWrite(4, LOW);
+  delay(50); 
+  digitalWrite(5, HIGH); 
+  delay(100);
+  digitalWrite(6, HIGH);
+  delay(100);
+  
+  digitalWrite(5, LOW);
+  delay(50); 
+  digitalWrite(6, HIGH); 
+  delay(100);
+  digitalWrite(7, HIGH);
+  delay(100);
+  
+  digitalWrite(6, LOW);
+  delay(50); 
+  digitalWrite(7, HIGH); 
+  delay(100);
+  digitalWrite(8, HIGH);
+  delay(100);
+  
+  digitalWrite(7, LOW);
+  delay(50); 
+  digitalWrite(8, HIGH); 
+  delay(100);
+  digitalWrite(9, HIGH);
+  delay(100);
+  
+  digitalWrite(8, LOW);
+  delay(50); 
+  digitalWrite(9, HIGH); 
+  delay(100);
+  digitalWrite(10, HIGH);
+  delay(100);
+  
+  digitalWrite(9, LOW);
+  delay(50); 
+  digitalWrite(10, HIGH); 
+  delay(100);
+  digitalWrite(11, HIGH);
+  delay(100);
+  
+  digitalWrite(10, LOW);
+  delay(50); 
+  digitalWrite(11, HIGH); 
+  delay(100);
+  digitalWrite(12, HIGH);
+  delay(100);
+  
+  digitalWrite(11, LOW);
+  delay(50); 
+  digitalWrite(12, HIGH); 
+  delay(100);
+  digitalWrite(13, HIGH);
+  delay(100);
+  
+  digitalWrite(12, LOW);
+  delay(50); 
+  digitalWrite(13, HIGH); 
+  delay(100);
+  digitalWrite(13, LOW);
+  delay(100);
+  
+  //END GRADUAL ON-OFF//R-L//
+  
+  //GRADUAL ON-OFF//L-R//
+  digitalWrite(13, HIGH); 
+  delay(100);
+  digitalWrite(12, HIGH);
+  delay(100); 
+  
+  digitalWrite(13, LOW);
+  delay(50); 
+  digitalWrite(12, HIGH); 
+  delay(100);
+  digitalWrite(11, HIGH);
+  delay(100);
+  
+  digitalWrite(12, LOW);
+  delay(50); 
+  digitalWrite(11, HIGH); 
+  delay(100);
+  digitalWrite(10, HIGH);
+  delay(100);
+  
+  digitalWrite(11, LOW);
+  delay(50); 
+  digitalWrite(10, HIGH); 
+  delay(100);
+  digitalWrite(9, HIGH);
+  delay(100);
+  
+  digitalWrite(10, LOW);
+  delay(50); 
+  digitalWrite(9, HIGH); 
+  delay(100);
+  digitalWrite(8, HIGH);
+  delay(100);
+  
+  digitalWrite(9, LOW);
+  delay(50); 
+  digitalWrite(8, HIGH); 
+  delay(100);
+  digitalWrite(7, HIGH);
+  delay(100);
+  
+  digitalWrite(8, LOW);
+  delay(50); 
+  digitalWrite(7, HIGH); 
+  delay(100);
+  digitalWrite(6, HIGH);
+  delay(100);
+  
+  digitalWrite(7, LOW);
+  delay(50); 
+  digitalWrite(6, HIGH); 
+  delay(100);
+  digitalWrite(5, HIGH);
+  delay(100);
+  
+  digitalWrite(6, LOW);
+  delay(50); 
+  digitalWrite(5, HIGH); 
+  delay(100);
+  digitalWrite(4, HIGH);
+  delay(100);
+  
+  digitalWrite(5, LOW);
+  delay(50); 
+  digitalWrite(4, HIGH); 
+  delay(100);
+  digitalWrite(3, HIGH);
+  delay(100);
+  
+  digitalWrite(4, LOW);
+  delay(50); 
+  digitalWrite(3, HIGH); 
+  delay(100);
+  digitalWrite(3, LOW);
+  delay(100);
+  //GRADUAL ON-OFF//R-L//  
+}
+  
+void loop()
+{
+  while (Serial.available()==0){
+  }
+    int userinput = Serial.parseInt();
+  
+    switch (userinput)
+    {
+      case 1:
+      LedLightShow1();
+      break;
+      
+      case 2:
+      LedLightShow2();
+      break;
+      
+      case 3:
+      LedLightShow3();
+      break;
+      
+      default:
+      Serial.println("Error");
+   }
+ }
